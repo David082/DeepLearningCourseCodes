@@ -18,3 +18,22 @@ Notes, Codes, and Tutorials for the Deep Learning Course at ChinaHadoop
 > - [K近邻算法在图像分类上的应用](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/02_logistic_regression_and_multilayer_perceptron/nearest_neighbor_tf.ipynb)
 > - [多层神经网络示例-TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/02_logistic_regression_and_multilayer_perceptron/neural_network_tf.ipynb)
 > - [多层神经网络示例-PyTorch](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/02_logistic_regression_and_multilayer_perceptron/neural_network_pt.ipynb)
+
+### 第三讲：卷积神经网络基础
+> 代码示例：[卷积神经网络的基础实现](https://github.com/jastarex/DeepLearningCourseCodes/tree/master/03_CNN_basics)(TensorFlow)
+> - [卷积神经网络示例(原生API)-TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/03_CNN_basics/cnn_tf_raw.ipynb)
+> - [卷积神经网络示例(高级API)-TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/03_CNN_basics/cnn_tf.ipynb)
+
+### 第四讲：卷积神经网络进阶
+
+### 第五讲：深度神经网络：目标分类与识别
+
+### 第六讲：深度神经网络：目标检测与追踪
+
+### 第七讲：深度神经网络：目标分割
+
+### 第八讲：循环神经网络与序列模型
+
+### 第九讲：无监督式学习
+
+### 第十讲：增强学习
