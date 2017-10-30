@@ -24,7 +24,8 @@ Notes, Codes, and Tutorials for the Deep Learning Course at ChinaHadoop
 
 ### 第二讲：传统神经网络
 > 代码示例：[K近邻算法，线性分类，以及多层神经网络](https://github.com/jastarex/DeepLearningCourseCodes/tree/master/02_Logistic_regression_and_multilayer_perceptron)(TensorFlow, PyTorch)
-> - [K近邻算法在图像分类上的应用](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/02_Logistic_regression_and_multilayer_perceptron/nearest_neighbor_tf.ipynb)
+> - [K近邻算法在图像分类上的应用-TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/02_Logistic_regression_and_multilayer_perceptron/nearest_neighbor_tf.ipynb)
+> - [K近邻算法在图像分类上的应用-PyTorch](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/02_Logistic_regression_and_multilayer_perceptron/nearest_neighbor_pt.ipynb) (contributed by Johnny Chen)
 > - [多层神经网络示例-TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/02_Logistic_regression_and_multilayer_perceptron/neural_network_tf.ipynb)
 > - [多层神经网络示例-PyTorch](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/02_Logistic_regression_and_multilayer_perceptron/neural_network_pt.ipynb)
 
@@ -58,6 +59,8 @@ pip install git+https://github.com/zsdonghao/tensorlayer.git
 - 安装[OpenCV](http://opencv.org/) python接口
 ```
 conda install -c menpo opencv3 
+或
+pip install opencv-python
 ```
 - 所需数据集下载：`data.zip`: [[微云](https://share.weiyun.com/7d008fcb693823503155acfc2be6ad2b)][[百度云](https://pan.baidu.com/s/1qYDhN5M)] (覆盖`./05_Image_recognition_and_classification/data`文件夹)  
 - 所需模型下载： `vgg19.npz`  [[微云](https://share.weiyun.com/9fe52101fad44dadd4385d1f3d1e5804)][[百度云](https://pan.baidu.com/s/1qXIXr32)] (放置于`./05_Image_recognition_and_classification`文件夹下)  
@@ -73,21 +76,60 @@ conda install -c menpo opencv3
 
 > - [Class Activation Mapping (CAM)示例](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/05_Image_recognition_and_classification/pytorch_CAM.py) (完整实现可参考[此处](https://github.com/metalbubble/CAM))
 
-### 第六讲：深度神经网络：目标检测
+### 第六讲：深度神经网络：目标检测与定位
 > 代码示例：[目标检测模型示例](https://github.com/jastarex/DeepLearningCourseCodes/tree/master/01_TF_basics_and_linear_regression) (TensorFlow, PyTorch)
 
-1. [TensorFlow Object Detection API使用示例](https://github.com/jastarex/DeepLearningCourseCodes/tree/master/06_Object_detection/Object_Detection_Tensorflow_API_demo)
+- [TensorFlow Object Detection API使用示例](https://github.com/jastarex/DeepLearningCourseCodes/tree/master/06_Object_detection/Object_Detection_Tensorflow_API_demo)
 
 - 所需模型下载：`ssd_mobilenet_v1_coco_11_06_2017`: [[微云](https://share.weiyun.com/800e541b4403b07fb460fc017c77dc20)] (解压并置于`06_Object_detection/Object_Detection_Tensorflow_API_demo/object_detection/`文件夹下)
 
-2. [`SSD: Single Shot Multibox Detector`] ([TensorFlow实现](https://github.com/balancap/SSD-Tensorflow), [PyTorch实现](https://github.com/amdegroot/ssd.pytorch))
+- [`SSD: Single Shot Multibox Detector`] ([TensorFlow实现](https://github.com/balancap/SSD-Tensorflow), [PyTorch实现](https://github.com/amdegroot/ssd.pytorch))
 
-3. [`YOLO`, `YOLOv2`] ([TensorFlow实现](https://github.com/ruiminshen/yolo-tf), [PyTorch实现](https://github.com/marvis/pytorch-yolo2))
+- [`YOLO`, `YOLOv2`] ([TensorFlow实现](https://github.com/ruiminshen/yolo-tf), [PyTorch实现](https://github.com/marvis/pytorch-yolo2))
 
 ### 第七讲：深度神经网络：目标追踪与目标分割
+> 代码示例：[目标追踪与目标分割](https://github.com/jastarex/DeepLearningCourseCodes/tree/master/07_Object_tracking_and_object_segmentation)
+
+- 目标追踪 - [`GOTURN`]([TensorFlow实现](https://github.com/tangyuhao/GOTURN-Tensorflow), [Plain Python实现](https://github.com/nrupatunga/PY-GOTURN), [Original C++实现](https://github.com/davheld/GOTURN))
+
+- 目标分割 - [`FCN`]([TensorFlow实现](https://github.com/shekkizh/FCN.tensorflow), [PyTorch实现](https://github.com/wkentaro/pytorch-fcn))
+
+- 目标分割 - [`Mask-RCNN`]([TensorFlow实现](https://github.com/CharlesShang/FastMaskRCNN), [PyTorch实现](https://github.com/felixgwu/mask_rcnn_pytorch))
 
 ### 第八讲：循环神经网络与序列模型
+> 代码示例：[循环神经网络](https://github.com/jastarex/DeepLearningCourseCodes/tree/master/08_RNN_and_Seq2Seq)
 
-### 第九讲：无监督式学习
+- 循环神经网络, `RNN` - [[TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/08_RNN_and_Seq2Seq/rnn_tf.ipynb), [Pytorch](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/08_RNN_and_Seq2Seq/rnn_pytorch.py)]
 
-### 第十讲：增强学习
+- 双向循环神经网络, `Bidirectional-RNN` - [[TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/08_RNN_and_Seq2Seq/bidirectional_rnn_tf.ipynb), [Pytorch](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/08_RNN_and_Seq2Seq/bidirection_rnn_pytorch.py)]
+
+- 动态循环神经网络, `Dynamic-RNN` - [[TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/08_RNN_and_Seq2Seq/dynamic_rnn_tf.ipynb)]
+
+- 自动编码器, `AutoEncoder` - [[TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/08_RNN_and_Seq2Seq/autoencoder_tf.ipynb)]
+
+- 变分自动编码器, `Variational AutoEncoder` - [[TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/08_RNN_and_Seq2Seq/variational_autoencoder_tf.ipynb)]
+
+- 图片标注, `Image Captioning` - [[TensorFlow](https://github.com/zsdonghao/Image-Captioning), [PyTorch](https://github.com/yunjey/pytorch-tutorial/tree/master/tutorials/03-advanced/image_captioning)]
+
+- 视频标注, `Video Captioning` - [[TensorFlow](https://github.com/chenxinpeng/S2VT)]
+
+### 第九讲：无监督式学习与生成对抗网络
+> 代码示例：[生成对抗网络](https://github.com/jastarex/DeepLearningCourseCodes/tree/master/09_Unsupervised_learning_and_GANs)
+
+- 生成对抗网络, `GAN` - [[TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/09_Unsupervised_learning_and_GANs/gan.ipynb), [PyTorch](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/09_Unsupervised_learning_and_GANs/gan_pytorch.py)] 
+
+- 深度卷积生成对抗网络, `DCGAN` - [[TensorFlow](https://github.com/jastarex/DeepLearningCourseCodes/blob/master/09_Unsupervised_learning_and_GANs/dcgan.ipynb)]
+
+- `Pix2Pix`, `CycleGAN` - [[PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)]
+
+- `StackGAN` - [[TensorFlow, PyTorch](https://github.com/hanzhanggit/StackGAN)]
+
+- `GANs Model Collections` - [[1](https://github.com/wiseodd/generative-models), [2](https://github.com/hwalsuklee/tensorflow-generative-model-collections), [3](https://github.com/znxlwm/pytorch-generative-model-collections)]
+
+### 第十讲：强化学习
+
+- `Basic Reinforcement Learning` - [[basic_reinforcement_learning](https://github.com/vmayoral/basic_reinforcement_learning)]
+
+- `Applied Reinfocement Learning` - [[applied-reinforcement-learning](https://github.com/mimoralea/applied-reinforcement-learning)]
+
+- `Oreilly RL Tutorial` - [[oreilly-rl-tutorial](https://github.com/awjuliani/oreilly-rl-tutorial)]
